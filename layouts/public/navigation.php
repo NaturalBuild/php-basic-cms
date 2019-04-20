@@ -28,12 +28,6 @@
           <li><a href="#"><i class="fa fa-calculator" aria-hidden="true"></i> Zakaat Calculator</a></li>
           <li><a href="temp_a.php?page=8"><i class="fa fa-briefcase" aria-hidden="true"></i> Job Opportunity</a></li>
           <li><a href="suggestion.php?page=9"><i class="fa fa-comment" aria-hidden="true"></i> Suggestion Form</a></li>
-          <li><a href="temp_a.php?page=12"><i class="fa fa-briefcase" aria-hidden="true"></i> Contact Developer</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="http://hablillah.com" target="_blank"><b>H:</b> Hablillah</a></li>
-          <li><a href="https://islamqa.info/en" target="_blank"><b>Q&A:</b> Islam Q&A En</a></li>
-          <li><a href="https://islamqa.info/bn/" target="_balnk"><b>Q&A:</b> Islam Q&A Bn</a></li>
-          <li><a href="http://irf.net/" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> IRF</a></li>
         </ul>
       </li>
       <li><a href="temp_b.php?page=10"><i class="fa fa-phone" aria-hidden="true"></i> Contact Us</a></li>

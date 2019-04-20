@@ -1,0 +1,65 @@
+body {
+	background: #EEEDED;
+	margin: auto;
+}
+
+.page_header_admin {
+	background: #2196F3;
+	padding: 5px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+form {
+	padding-top: 15px;
+}
+.btn_edit_delete {
+	float: right;
+	padding: 3px;
+}
+
+.btn_edit_delete > button > a{
+	color: white;
+	text-decoration: none;
+}
+
+#table_img {
+	  box-shadow: 4px 8px 16px 0 #272822;
+	  text-align: center;
+} 
+
+select.form-control {
+	width: 150px;
+	float: right;
+	text-align: center;
+
+}
+
+.btn-responsive {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.container {
+	min-height: 490px;
+}
+
+
+footer {
+	background: #2196F3;
+	padding: 15px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+footer > a {
+	color: white;
+}
+
+footer > a:hover {
+	color: #D9534F;
+	text-decoration: none;
+}
+

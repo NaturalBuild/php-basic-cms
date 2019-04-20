@@ -70,7 +70,7 @@
 
 					<div style="min-height: 50px;">
 						<h3>Support the MAdrasah</h3>
-						<p><a href="<?= $path_user.'files/standing_order_mandate.pdf';?>" target='_blank'>Click on the link below to print and complete the standing order mandate.</a></p>
+						<p><a href="<?= 'files/standing_order_mandate.pdf';?>" target='_blank'>Click on the link below to print and complete the standing order mandate.</a></p>
 					</div><hr>
 					<div >
 						<img style="box-shadow: 10px 10px 5px #888888;" src="assets/img/ramadhaan.jpg" width="350" height="250">

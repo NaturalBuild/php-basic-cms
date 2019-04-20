@@ -15,7 +15,7 @@
                 
                 <div class="col-sm-2"  id="logo">
                   <ul class="header_icon" >
-                      <a href="index.php"><img src="assets/img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
+                      <a href="index.php"><img src="<?php echo ASSETS; ?>/img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
                   </ul>
                   
                 </div>
@@ -42,7 +42,7 @@
       if (mysqli_num_rows($r) > 0) {
         while ($row = mysqli_fetch_assoc($r)) { ?>
           <li>
-            <img src="<?php echo '../'.$row['src']; ?>">
+            <img src="<?php echo BASE_URL.'/uploads/gallery/'.$row['src']; ?>">
             <div class="ism-caption ism-caption-0"><?= $row['title']; ?></div>
           </li>
           

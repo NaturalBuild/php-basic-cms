@@ -24,25 +24,24 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title><?= $page_title; ?></title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link href="<?php echo ASSETS; ?>/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo ASSETS; ?>/css/font-awesome.min.css">
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="<?php echo ASSETS; ?>/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script src="<?php echo ASSETS; ?>/js/ie-emulation-modes-warning.js"></script>
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/carousel.css" rel="stylesheet">
-    <link href="assets/css/public.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/my-slider.css">
-    <script type="text/javascript" src="assets/js/ism-2.2.min.js"></script>
+    <link href="<?php echo ASSETS; ?>/css/carousel.css" rel="stylesheet">
+    <link href="<?php echo ASSETS; ?>/css/public.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="<?php echo ASSETS; ?>/css/my-slider.css">
+    <script type="text/javascript" src="<?php echo ASSETS; ?>/js/ism-2.2.min.js"></script>
 	<title>Gallery</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="<?php echo ASSETS; ?>/css/style.css">
+	<link rel="stylesheet" href="<?php echo ASSETS; ?>/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	
 	<!--[if IE]>
 	  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -58,7 +57,7 @@
                 
                 <div class="col-sm-2"  id="logo">
                   <ul class="header_icon" >
-                      <a href="index.php"><img src="assets/img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
+                      <a href="index.php"><img src="<?php echo ASSETS; ?>/img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
                   </ul>
                   
                 </div>
@@ -81,8 +80,9 @@
 
         if (mysqli_num_rows($result) > 0) {
           while ($row = mysqli_fetch_assoc($result)) { ?>
-              <li><a rel="gallery" class="fancybox" rel="group" href="<?= '..'.$row['src']; ?>">
-                    <img width="200" height="120" src="<?= '..'.$row['src']; ?>" alt="<?= '..'.$row['title']; ?>" >
+              <li><a rel="gallery" class="fancybox" rel="group" href="<?php echo BASE_URL.'/uploads/gallery/'.$row['src']; ?>">
+                    <img width="200" height="120" 
+                    src="<?php echo BASE_URL.'/uploads/gallery/'.$row['src']; ?>" alt="<?= '..'.$row['title']; ?>" >
                   </a>
               </li>
 
@@ -109,8 +109,8 @@
         </footer>
 
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.mousewheel-3.0.6.pack.js"></script>
-		<script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS; ?>/js/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="<?php echo ASSETS; ?>/js/jquery.fancybox.pack.js"></script>
 		<script type="text/javascript">
 			$(".fancybox").fancybox({
 		    beforeShow : function() {
@@ -122,7 +122,7 @@
 		    }
 		});
 		</script>
-	    <script src="assets/js/bootstrap.min.js"></script>
-	    <script type="text/javascript" src="assets/js/ism-2.2.min.js"></script>
+	    <script src="<?php echo ASSETS; ?>/js/bootstrap.min.js"></script>
+	    <script type="text/javascript" src="<?php echo ASSETS; ?>/js/ism-2.2.min.js"></script>
 </body>
 </html>

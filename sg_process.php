@@ -1,5 +1,5 @@
 <?php 
-	require_once('../../includes/db.php');
+	require_once('includes/autoload.php');
 	if (isset($_POST['e'])) {
 		$n = trim(mysqli_real_escape_string($con, $_POST['n']));
 		$e = trim(mysqli_real_escape_string($con, $_POST['e']));
@@ -18,7 +18,6 @@
 			$ip = preg_replace("#[^0-9.]#", "", getenv('REMOTE_ADDR'));
 			$sql = "INSERT INTO suggestions (name, phone, email, content, submit_date, ip)";
 			$sql .= " VALUES ('{$n}', '{$p}', '{$e}', '{$t}', '{$now}', '{$ip}')";
-
 			$result = mysqli_query($con, $sql);
 			if (!$result) {
 				echo 'Failed';

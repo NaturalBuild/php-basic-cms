@@ -36,7 +36,7 @@
                 
                 <div class="col-sm-2"  id="logo">
                   <ul class="header_icon" >
-                      <a href="#"><img src="../img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
+                      <a href="#"><img src="<?php echo ASSETS; ?>/img/Madrasa_logo.png" alt="Img logo" width="100" height="100"></a>                         
                   </ul>
                   
                 </div>
@@ -137,7 +137,7 @@
 		    <input type="email" class="form-control" id="email" onfocus="emptyEL('status')" placeholder="Email">
 		  </div>
 		  <div class="form-group">
-		  <script src="ckeditor/ckeditor.js"></script>
+		  <script src="<?php echo ASSETS; ?>\js\config.js"></script>
 		    <label for="exampleInputFile">Please provide a brief summary of your idea:</label>
 		     <textarea class="form-control" id="txt" name="txt"></textarea>
 					

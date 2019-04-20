@@ -56,9 +56,9 @@
           } else {
 
               	$panel= '<div class="panel panel-default"><div class="panel-heading">';
-		        $panel.= 'Jamiya Khadijatul Kubra Madrasha';  
+		        $panel.= SITE_TITLE;  
 		        $panel.= '</div><div class="panel-body">';
-		        $panel.= 'Jamiya Khadijatul Kubra Madrasha: Malda West Bengal India';
+		        $panel.= SITE_TITLE.': West Bengal India';
 		        $panel.= '</div></div>';   
 
 		        $panel_set = array($panel);

@@ -6,7 +6,7 @@
             </div>
             <div class="col-sm-6">
               <div style="float: right" id="company">
-                <span> Develop</span>  <span class="footerRes"> & Design</span> by: <a style="text-decoration: none; color: #fff;" href="https://www.facebook.com/bestheartitsolutions/" target="_blank"> @Bestheart IT Solution</a>
+                <span> Develop</span>  <span class="footerRes"> & Design</span> by: <a style="text-decoration: none; color: #fff;" href="#" target="_blank"> <?php echo DEVELOPED_BY; ?></a>
               </div>
             </div>
           </div>
@@ -16,7 +16,7 @@
               
         </footer>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/ism-2.2.min.js"></script>
+    <script src="<?php echo ASSETS; ?>/js/bootstrap.min.js"></script>
+    <script src="<?php echo ASSETS; ?>/js/ism-2.2.min.js"></script>
 </body>
 </html>
